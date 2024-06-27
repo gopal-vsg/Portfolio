@@ -1,15 +1,26 @@
 import React from "react";
-const Heropage = () =>{
-    return(
-        <div className="flex container mx-auto">
-        <div className="flex-1 items-center justify-center  pt-13 p-20 pr-16 m-4 ">
-            <img src={`${process.env.PUBLIC_URL}/intro.png`} alt="logo" className="h-32 ml-28 mt-16" />
-            
+
+const Heropage = () => {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-end">
+          <img
+            src={`${process.env.PUBLIC_URL}/intro.png`}
+            alt="Introduction"
+            className="h-auto max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl"
+          />
         </div>
-        <div className="flex-1 items-center justify-center p-20 pt-9 m-4 ">
-            <img src={`${process.env.PUBLIC_URL}/profile.png`} alt="logo" className=" w-65 h-65 " />
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+          <img
+            src={`${process.env.PUBLIC_URL}/profile.png`}
+            alt="Profile"
+            className="h-auto max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl"
+          />
         </div>
+      </div>
     </div>
-    );
-}
+  );
+};
+
 export default Heropage;
