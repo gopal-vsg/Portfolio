@@ -70,7 +70,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="mt-16 bg-sky-200 pt-8 pb-10">
+    <section className="mt-16 bg-sky-200 pt-8 pb-10" id="projects">
       <div className="w-11/12 max-w-6xl mx-auto">
       <h2 className="text-3xl sm:text-4xl md:text-3xl font-poppins font-extrabold text-gray-900 mb-8 text-center">
         My <span className="text-sky-600  decoration-sky-500">Work</span>

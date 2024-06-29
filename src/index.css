@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 767px) {
+  .bg-opacity-mobile {
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

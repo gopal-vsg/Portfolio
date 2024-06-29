@@ -2,6 +2,7 @@ import React from "react";
 
 const Heropage = () => {
   return (
+    <section id="hero">
     <div className="container mx-auto px-4 py-36">
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-end">
@@ -20,6 +21,7 @@ const Heropage = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
