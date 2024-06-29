@@ -2,10 +2,15 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const scroll = (sectionId)=>{
+    const element = document.getElementById(sectionId);
+    if(element){
+      element.scrollIntoView();
+    }
+  }
   return (
     <header className="font-poppins">
-      <nav className="container mx-auto px-4 py-3">
+      <nav className="fixed top-0 w-full mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
             <img
@@ -16,13 +21,13 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex flex-grow justify-center">
             <div className="flex space-x-8">
-              <a href="#" className="hover:text-cyan-600">
+              <a className="hover:text-cyan-600">
                 Home
               </a>
-              <a href="#" className="hover:text-cyan-600">
+              <a  className="hover:text-cyan-600 cursor-pointer" onClick={()=>scroll('about')}>
                 About
               </a>
-              <a href="#" className="hover:text-cyan-600">
+              <a className="hover:text-cyan-600 cursor-pointer" onClick={()=>scroll('skills')}>
                 Skills
               </a>
               <a href="#" className="hover:text-cyan-600">
@@ -58,7 +63,7 @@ const Navbar = () => {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="mt-4 md:hidden">
+          <div className="mt-4 md:hidden bg-white">
             <a href="#" className="block py-2 hover:text-cyan-600">
               Home
             </a>
