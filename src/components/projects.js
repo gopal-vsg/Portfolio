@@ -7,35 +7,35 @@ const Projects = () => {
   const details = [
     {
       name: "Active Crash Detection",
-      img: `${process.env.PUBLIC_URL}projects/accident.png`,
+      img: `${process.env.PUBLIC_URL}/projects/accident.png`,
       description:
         "Utilizing AI crash detection on Jetson Nano, incidents trigger alert frames to AWS cloud. The severity of crashes determines automated email alerts to emergency services, ensuring swiftresponse",
         link : 'https://github.com/gopal-vsg/Active-Crash-Detection-and-Alarming-System'
     },
     {
       name: "Digital Twin - SIH2023",
-      img: `${process.env.PUBLIC_URL}projects/digital.png`,
+      img: `${process.env.PUBLIC_URL}/projects/digital.png`,
       description:
         "Machine learning, using real power generation data, replicates system behavior. This virtual testing ground identifies anomalies, mitigating risks associated with actual machinery",
         link : 'https://github.com/gopal-vsg/Digital_Twin_of_power_generation_systems_SIH_Internal_hackathon_2023'
     },
     {
       name: "Gen AI - Tune&Tale",
-      img: `${process.env.PUBLIC_URL}projects/genai.png`,
+      img: `${process.env.PUBLIC_URL}/projects/genai.png`,
       description:
         "Integrating Generative AI tools such as Transformers and SentencePiece, 'Tune & Tale' crafts immersive narratives with visuals and music offering a unique fusion of art and technology.",
       link : 'https://github.com/gopal-vsg/Generative-AI-LLM-'
     },
     {
       name: "Legal Link ",
-      img: `${process.env.PUBLIC_URL}projects/legal.png`,
+      img: `${process.env.PUBLIC_URL}/projects/legal.png`,
       description:
         "This website is a comprehensive tool designed to streamline and manage legal cases. The website also provides details of your case, using a classification model, which helps classify your case type.",
         link : 'https://github.com/gopal-vsg/Legal-Link'
     },
     {
       name: "Facial Emotion Detection",
-      img: `${process.env.PUBLIC_URL}projects/facial.png`,
+      img: `${process.env.PUBLIC_URL}/projects/facial.png`,
       description:
         "Tailored for facial expression recognition, this CNN-based system extracts features with three convolutional layers. Dense layers process features for multi-class emotion classification",
         link : 'https://github.com/gopal-vsg/Facial_expression_recognition_Using_CNN'

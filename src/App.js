@@ -9,7 +9,7 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="bg-cover bg-center min-h-screen top-0" style={{ backgroundImage: "url('/bg.jpg')",backgroundAttachment:"fixed" }}>
+    <div className="bg-cover bg-center min-h-screen top-0" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/bg.jpg)`,backgroundAttachment:"fixed" }}>
       <Navbar />
       <Heropage/>
       <div className='m-10'></div>

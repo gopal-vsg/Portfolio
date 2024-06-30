@@ -39,7 +39,8 @@ const Footer = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-300 py-16 pb-6 bg-cover bg-opacity-30" style={{ backgroundImage: "url('/19007.jpg')" }}>
+    <section id="contact" className="bg-gray-300 py-16 pb-6 bg-cover bg-opacity-30" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/19007.jpg)` , backgroundAttachment:"fixed"}}>
+
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" >
     <div className="flex flex-col md:flex-row gap-8">
       
