@@ -18,13 +18,14 @@ const Footer = () => {
 
     emailjs
       .send(
-        "service_v55en5j", // Replace with your EmailJS service ID
-        "template_a1u2m8b", // Replace with your EmailJS template ID
+        process.env.REACT_APP_SERVER_ID, // Replace with your EmailJS service ID
+        process.env.REACT_APP_TEMPLATE_ID, // Replace with your EmailJS template ID
         formData,
-        "CIG2otsPCGfkbxtPd" // Replace with your EmailJS user ID
+        process.env.REACT_APP_USER_ID // Replace with your EmailJS user ID
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        window.alert("Message sent!")
       })
       .catch((err) => {
         console.log("FAILED...", err);
