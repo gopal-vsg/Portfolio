@@ -18,10 +18,10 @@ const Footer = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_SERVER_ID, // Replace with your EmailJS service ID
-        process.env.REACT_APP_TEMPLATE_ID, // Replace with your EmailJS template ID
+        process.env.REACT_APP_SERVER_ID, 
+        process.env.REACT_APP_TEMPLATE_ID, 
         formData,
-        process.env.REACT_APP_USER_ID // Replace with your EmailJS user ID
+        process.env.REACT_APP_USER_ID 
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -42,7 +42,7 @@ const Footer = () => {
     <section id="contact" className="bg-gray-300 py-16 pb-6 bg-cover bg-opacity-30" style={{ backgroundImage: "url('/19007.jpg')" }}>
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" >
     <div className="flex flex-col md:flex-row gap-8">
-      {/* Message Me Section */}
+      
       <div className="w-full md:w-1/2 order-1 md:order-2">
         <h2 className="text-3xl font-poppins font-extrabold text-gray-900 mb-6 text-center md:text-left">
           Message <span className="text-sky-600">Me</span>
@@ -154,7 +154,7 @@ const Footer = () => {
     </div>
   </div>
 
-  {/* Copyright Section */}
+
   <div className="mt-16 border-t border-gray-300 pt-8 text-center text-gray-500">
     <p>Made by ✨ Gopal Vallu - 2024</p>
   </div>
